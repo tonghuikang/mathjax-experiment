@@ -1,12 +1,10 @@
 # mathjax-experiment
 
-1802
-
 Please refer to the [Github repository](https://github.com/tonghuikang/mathjax-experiment) for the source of this example.
 
 This uses [MathJax](https://github.com/mathjax/MathJax)
 
-I followed these instructions to make it [work](http://csega.github.io/mypost/2017/03/28/how-to-set-up-mathjax-on-jekyll-and-github-properly.html)
+I followed these [instructions](http://csega.github.io/mypost/2017/03/28/how-to-set-up-mathjax-on-jekyll-and-github-properly.html) instructions to make it work.
 
 <script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); 
 </script>
