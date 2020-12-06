@@ -20,3 +20,11 @@ $$
 x = {-b \pm \sqrt{b^2-4ac} \over 2a}
 $$
 
+$f(k) = 1-\min\{ 1, f_{k-1}, f_{k-2}, f_{k-6} \}$
+
+- The **recursion** $f(k) = 1-\min\{ 1, f_{k-1}, f_{k-2}, f_{k-6} \}$
+- The **recursion** $f(k) = 1-\min\lbrace 1, f_{k-1}, f_{k-2}, f_{k-6} \rbrace$
+- minimise $\dfrac{\textcolor{red}{\lambda}}{2}  || \theta || ^2 + \textcolor{red}{\dfrac{1}{n}\Sigma_{(x,y)} \xi_{x,y}}$
+- minimise $\dfrac{\textcolor{red}{\lambda}}{2}  \vert  \vert \theta \vert  \vert ^2 + \textcolor{red}{\dfrac{1}{n}\Sigma_{(x,y)} \xi_{x,y}}$
+
+$$\dfrac{\textcolor{red}{\lambda}}{2}  || \theta || ^2 + \textcolor{red}{\dfrac{1}{n}\Sigma_{(x,y)} \xi_{x,y}}$$
