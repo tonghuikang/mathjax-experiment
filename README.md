@@ -34,7 +34,7 @@ $$
 <div style="page-break-after: always;"></div>
 # Stress Testing
 
-However, the parsing may not work for various reasons. We test it inline - encoded between two single dollar signs, and displayed - encoded between two double dollar signs.
+The parsing is different from how I see it on Typora, for reasons intended or otherwise.
 
 
 ### Displayed math immediately after text
@@ -48,7 +48,7 @@ $$
 
 ### Vertical symbol
 
-In markdown, vertical symbols were used to delimit the table. It is recommended to use `\vert` in math expression.
+In markdown, vertical symbols were used to delimit the tables. It is recommended to use `\vert` in math expression.
 
 You observe a subset $S$ with $|S|$ elements such that its weights is larger than the limit. The **knapsack cover inequality** prevents you from choosing all of these elements, you can choose at most $|S| - 1$ elements from $S$.
 
@@ -93,10 +93,9 @@ $$
 
 Data $\mathcal{S}$ is made up of training data $\mathcal{S}_n,$ validation data $\mathcal{S}_{val}$ or test data $\mathcal{S}_*$
 
-Please let me know if you how to resolve this!
+Data $$\mathcal{S}$$ is made up of training data $$\mathcal{S}_n,$$ validation data $$\mathcal{S}_{val}$$ or test data $$\mathcal{S}_*$$
 
-
-
+Please let me know if you how to resolve the problem with double underscores!
 
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
