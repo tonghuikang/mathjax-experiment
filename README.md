@@ -1,6 +1,6 @@
 # mathjax-experiment
 
-Please refer to the [Github repository](https://github.com/tonghuikang/mathjax-experiment) for the [source](https://raw.githubusercontent.com/tonghuikang/mathjax-experiment/master/README.md) of this example.
+Please refer to the [Github repository](https://github.com/tonghuikang/mathjax-experiment) for the [source](https://raw.githubusercontent.com/tonghuikang/mathjax-experiment/master/README.md) of this [example](https://tonghuikang.github.io/mathjax-experiment/).
 
 This uses [MathJax](https://github.com/mathjax/MathJax).
 
@@ -16,6 +16,10 @@ You just need to append these three lines of [javascript](https://docs.mathjax.o
 
 You can append it to the Jekyll templates if you know how to do it.
 
+There was also a [KaTeX](https://katex.org/) parser, but I was not able to use it render [inline](https://tonghuikang.github.io/mathjax-experiment/) equations while making use of `\textcolor`.
+
+
+
 # Basic Example
 
 Following is an example of inline and displayed $\LaTeX$ typesetting.
@@ -26,6 +30,8 @@ $$
 x = {-b \pm \sqrt{b^2-4ac} \over 2a}
 $$
 
+
+<div style="page-break-after: always;"></div>
 # Stress Testing
 
 However, the parsing may not work for various reasons. We test it inline - encoded between two single dollar signs, and displayed - encoded between two double dollar signs.
@@ -35,23 +41,11 @@ However, the parsing may not work for various reasons. We test it inline - encod
 
 In markdown, vertical symbols were used to delimit the table. It is recommended to use `\vert` in math expression.
 
-You observe a subset $S$ with $\vert S \vert$ elements such that its weights is larger than the limit. The **knapsack cover inequality** prevents you from choosing all of these elements, you can choose at most $\vert S \vert - 1$ elements from $S$.
+You observe a subset $S$ with $|S|$ elements such that its weights is larger than the limit. The **knapsack cover inequality** prevents you from choosing all of these elements, you can choose at most $|S| - 1$ elements from $S$.
 
 $$
-\sum_{j \in S} x_j \leq \vert S \vert - 1
+\sum_{j \in S} x_j \leq |S| - 1 = |S| - 1
 $$
-
-### Double underscores
-
-In markdown, underscores were used mark emphasis. I have not yet to find an workaround.
-
-The objective function is $f(x) = x_1 + x_2$
-
-$$
-f(x) = x_1 + x_2
-$$
-
-Data $\mathcal{S}$ is made up of training data $\mathcal{S}_n,$ validation data $\mathcal{S}_{val}$ or test data $\mathcal{S}_*$
 
 
 ### Curly braces
@@ -69,12 +63,27 @@ $$
 
 Some parsers does not have certain packages.
 
-The task is to minimise $\dfrac{\textcolor{red}{\lambda}}{2}  || \theta || ^2 + \textcolor{red}{\dfrac{1}{n}\Sigma_{(x,y)} \xi_{x,y}}$
+The task is to minimise $\dfrac{\textcolor{red}{\lambda}}{2}  \vert \vert \theta \vert \vert ^2 + \textcolor{red}{\dfrac{1}{n}\Sigma_{(x,y)} \xi_{x,y}}$
 
 $$
 f(\theta) = \dfrac{\textcolor{red}{\lambda}}{2}  || \theta || ^2 + \textcolor{red}{\dfrac{1}{n}\Sigma_{(x,y)} \xi_{x,y}}
 $$
 
+
+### Double underscores
+
+In markdown, underscores were used mark emphasis. There are still issues parsing underscores from separate math expressions. I have not yet to find an workaround.
+
+The objective function is $f(x) = x_1 + x_2$
+
+$x_1$ is the number of oranges and $x_2$ is the number of apples
+$$
+f(x) = x_1 + x_2
+$$
+
+Data $\mathcal{S}$ is made up of training data $\mathcal{S}_n,$ validation data $\mathcal{S}_{val}$ or test data $\mathcal{S}_*$
+
+Please let me know if you how to resolve this!
 
 
 
