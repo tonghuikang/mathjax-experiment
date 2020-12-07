@@ -37,6 +37,15 @@ $$
 However, the parsing may not work for various reasons. We test it inline - encoded between two single dollar signs, and displayed - encoded between two double dollar signs.
 
 
+### Displayed math immediately after text
+
+If there is displayed math is not spaced out between two blocks of text, it will be rendered inline. You need an empty line before your double dollar sign symbol.
+
+$f(x)$ is the objective function
+$$
+f(x) = a + b + c + d
+$$
+
 ### Vertical symbol
 
 In markdown, vertical symbols were used to delimit the table. It is recommended to use `\vert` in math expression.
@@ -74,11 +83,12 @@ $$
 
 In markdown, underscores were used mark emphasis. There are still issues parsing underscores from separate math expressions. I have not yet to find an workaround.
 
-The objective function is $f(x) = x_1 + x_2$
+The objective function is $f(x) = x_1 + x_2 + x_3 + x_4$
 
-$x_1$ is the number of oranges and $x_2$ is the number of apples
+$x_1$ is the number of oranges, $x_2$ is the number of apples, $x_3$ is the number of pears and $x_4$ is the number of bananas
+
 $$
-f(x) = x_1 + x_2
+f(x) = x_1 + x_2 + x_3 + x_4
 $$
 
 Data $\mathcal{S}$ is made up of training data $\mathcal{S}_n,$ validation data $\mathcal{S}_{val}$ or test data $\mathcal{S}_*$
