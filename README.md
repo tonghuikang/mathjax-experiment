@@ -95,6 +95,19 @@ Data $\mathcal{S}$ is made up of training data $\mathcal{S}_n,$ validation data 
 
 Data $$\mathcal{S}$$ is made up of training data $$\mathcal{S}_n,$$ validation data $$\mathcal{S}_{val}$$ or test data $$\mathcal{S}_*$$
 
+There are issues with the double dollar signs. If the expression is the only content on a line or after a bullet point, it will appear as displayed even though you want to render it inline. The workaround is to break the equation into two.
+
+$$v_{*}(s) = \max_\pi v_\pi (s) = \max_a q_*(s,a)$$
+
+$$v_{*}(s) $$$$= \max_\pi v_\pi (s) = \max_a q_*(s,a)$$
+
+- $$\tilde{C}_t = \tanh(W_C \cdot [h_{t-1}, x_t] + b_C)$$
+
+- $$\tilde{C}_t$$$$= \tanh(W_C \cdot [h_{t-1}, x_t] + b_C)$$
+
+
+
+
 
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
