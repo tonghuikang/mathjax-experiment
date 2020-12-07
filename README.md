@@ -81,7 +81,7 @@ $$
 
 ### Double underscores
 
-In markdown, underscores were used mark emphasis. There are still issues parsing underscores from separate math expressions. I have not yet to find an workaround.
+In markdown, underscores were used mark emphasis. There are still issues parsing underscores from separate math expressions. The workaround is to use double dollar signs for inline math expressions.
 
 The objective function is $f(x) = x_1 + x_2 + x_3 + x_4$
 
@@ -95,7 +95,6 @@ Data $\mathcal{S}$ is made up of training data $\mathcal{S}_n,$ validation data 
 
 Data $$\mathcal{S}$$ is made up of training data $$\mathcal{S}_n,$$ validation data $$\mathcal{S}_{val}$$ or test data $$\mathcal{S}_*$$
 
-Please let me know if you how to resolve the problem with double underscores!
 
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
